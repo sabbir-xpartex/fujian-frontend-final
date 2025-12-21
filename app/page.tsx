@@ -27,12 +27,13 @@ export const metadata: Metadata = {
     siteName: "Fujian Accessories CO. Ltd.",
     images: [
       {
-        url: "/fujian-og.jpg",
+        url: "https://faclbangladesh.com/fujian-og.png",
         width: 1200,
         height: 630,
         alt: "Fujian Accessories CO. Ltd.",
       },
     ],
+
     type: "website",
   },
   alternates: {
