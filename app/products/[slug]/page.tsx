@@ -4,7 +4,7 @@ import ProductPageClient from "./ProductPageClient";
 import { getProducts } from "@/lib/getProducts";
 
 const baseUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.fujianaccessories.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://faclbangladesh.com";
 
 export async function generateStaticParams() {
   const products = getProducts();

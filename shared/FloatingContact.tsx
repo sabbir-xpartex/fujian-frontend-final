@@ -3,7 +3,7 @@
 
 import { memo } from "react";
 import Link from "next/link";
-import { PhoneCall, Mail } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 function FloatingContact() {

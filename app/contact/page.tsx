@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     title: "Contact Fujian Accessories CO. Ltd.",
     description:
       "Get in touch with Fujian Accessories CO. Ltd. for factory-direct garment accessories manufacturing and global export.",
-    url: "https://www.fujianaccessories.com/contact",
+    url: "https://faclbangladesh.com/contact",
     siteName: "Fujian Accessories CO. Ltd.",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.fujianaccessories.com/contact",
+    canonical: "https://faclbangladesh.com/contact",
   },
   robots: {
     index: true,

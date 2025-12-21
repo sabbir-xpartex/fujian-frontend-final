@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "About Fujian Accessories CO. Ltd.",
     description:
       "Professional garment accessories manufacturer with factory-direct production and global export experience.",
-    url: "https://www.fujianaccessories.com/about",
+    url: "https://faclbangladesh.com/about",
     siteName: "Fujian Accessories CO. Ltd.",
     type: "website",
   },

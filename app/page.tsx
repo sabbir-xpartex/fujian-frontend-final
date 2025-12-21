@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Fujian Accessories CO. Ltd.",
     description:
       "Professional garment accessories manufacturer for global fashion brands.",
-    url: "https://www.fujianaccessories.com",
+    url: "https://faclbangladesh.com",
     siteName: "Fujian Accessories CO. Ltd.",
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.fujianaccessories.com",
+    canonical: "https://faclbangladesh.com",
   },
 };
 

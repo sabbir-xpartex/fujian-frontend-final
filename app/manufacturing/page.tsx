@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Manufacturing Capabilities | Fujian Accessories CO. Ltd.",
     description:
       "Advanced manufacturing, strict quality control, and global export-ready production for garment accessories.",
-    url: "https://www.fujianaccessories.com/manufacturing",
+    url: "https://faclbangladesh.com/manufacturing",
     siteName: "Fujian Accessories CO. Ltd.",
     images: [
       {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.fujianaccessories.com/manufacturing",
+    canonical: "https://faclbangladesh.com/manufacturing",
   },
 };
 

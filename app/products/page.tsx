@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Garment Accessories Products | Fujian Accessories CO. Ltd.",
     description:
       "Buttons, zippers, labels, patches, and custom garment accessories for global fashion brands.",
-    url: "https://www.fujianaccessories.com/products",
+    url: "https://faclbangladesh.com/products",
     siteName: "Fujian Accessories CO. Ltd.",
     images: [
       {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.fujianaccessories.com/products",
+    canonical: "https://faclbangladesh.com/products",
   },
 };
 

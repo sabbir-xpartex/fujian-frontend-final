@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       "Quality Control & Manufacturing Compliance | Fujian Accessories CO. Ltd.",
     description:
       "From raw material inspection to final shipment audits, explore how Fujian Accessories CO. Ltd. ensures consistent quality and international compliance.",
-    url: "https://www.fujianaccessories.com/quality",
+    url: "https://faclbangladesh.com/quality",
     siteName: "Fujian Accessories CO. Ltd.",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.fujianaccessories.com/quality",
+    canonical: "https://faclbangladesh.com/quality",
   },
 
   robots: {
