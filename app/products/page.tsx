@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ProductsClient from "./ProductsClient";
 
 export const metadata: Metadata = {
-  title: "Garment Accessories Products | Fujian Accessories CO. Ltd.",
+  title: "Products | Fujian Accessories CO. Ltd.",
   description:
     "Explore our full range of garment accessories including buttons, zippers, labels, patches, and custom accessories manufactured with strict quality control.",
   keywords: [

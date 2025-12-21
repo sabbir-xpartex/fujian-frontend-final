@@ -15,7 +15,7 @@ function Footer() {
           <div className="flex flex-col gap-4">
             <Image
               src="/fujian.svg"
-              alt="Fujian Accessories CO. Ltd."
+              alt="Fujian Accessories Co. Ltd."
               width={160}
               height={48}
               className="w-40"
@@ -93,18 +93,18 @@ function Footer() {
 
             <div className="flex items-start gap-3 text-sm text-[#00019A]/80">
               <Mail className="h-4 w-4 text-[#00019A]" />
-              <span>sales@fujianaccessories.com</span>
+              <span>info@faclbangladesh.com</span>
             </div>
 
             <div className="flex items-start gap-3 text-sm text-[#00019A]/80">
               <Phone className="h-4 w-4 text-[#00019A]" />
-              <span>+86 000 0000 0000</span>
+              <span>+880 1714 813840</span>
             </div>
           </div>
         </div>
 
         <div className="mt-8 border-t border-[#00019A]/15 pt-4 text-center text-xs text-[#00019A]/70">
-          © {new Date().getFullYear()} Fujian Accessories CO. Ltd. All rights
+          © {new Date().getFullYear()} Fujian Accessories Co. Ltd. All rights
           reserved.
         </div>
       </div>

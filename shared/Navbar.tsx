@@ -66,10 +66,16 @@ shadow-[0_0_20px_rgba(0,0,0,0.08)]"
 
         <div className="flex items-center gap-3">
           <Button
+            asChild
             variant="outline"
-            className="hidden border-blue-600 cursor-pointer text-[#00019A] transition-all hover:bg-[#00019A] hover:text-white md:flex"
+            className="hidden border-blue-600 text-[#00019A] transition-all hover:bg-[#00019A] hover:text-white md:flex"
           >
-            Get Quote
+            <a
+              href="mailto:info@faclbangladesh.com"
+              aria-label="Request a quote by email"
+            >
+              Get Quote
+            </a>
           </Button>
 
           <Sheet open={open} onOpenChange={setOpen}>
@@ -114,8 +120,16 @@ shadow-[0_0_20px_rgba(0,0,0,0.08)]"
                   ))}
                 </nav>
 
-                <Button className="bg-[#00019A] text-white hover:bg-[#00019A]">
-                  Get a Quote
+                <Button
+                  asChild
+                  className="w-full bg-[#00019A] text-white hover:bg-[#00019A]"
+                >
+                  <a
+                    href="mailto:info@faclbangladesh.com"
+                    aria-label="Request a quote by email"
+                  >
+                    Get a Quote
+                  </a>
                 </Button>
               </div>
             </SheetContent>
