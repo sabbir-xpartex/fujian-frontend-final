@@ -12,7 +12,7 @@ function ProductsClient() {
         </h1>
 
         <p className="text-sm text-gray-600">
-          High-quality garment accessories manufactured for global brands.
+Fujian Accessories Co. Ltd. is a trusted manufacturer and supplier of high-quality garments accessories for global apparel brands. We provide a complete range of labeling, trimming and packaging solutions that enhance brand identity, functionality and garment value. Our products are manufactured using premium raw materials and modern technology to meet international quality standards.
         </p>
       </section>
 

@@ -25,13 +25,13 @@ const clients: Client[] = [
 ];
 
 const OurClient = () => (
-  <section className="py-6 mx-auto">
+  <section className="py-6 mx-auto max-w-7xl w-full">
     <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
       Our Trusted Clients
     </h2>
-    <div className="overflow-x-auto">
-      <div className="flex gap-6 items-center w-max">
-        {clients.map((client, idx) => (
+    <div className="overflow-hidden mt-10 relative">
+      <div className="flex gap-6 w-max animate-marquee">
+        {[...clients, ...clients].map((client, idx) => (
           <div key={idx} className="shrink-0 w-32 h-16 relative">
             <Image
               src={client.src}
@@ -44,6 +44,19 @@ const OurClient = () => (
         ))}
       </div>
     </div>
+    <style jsx>{`
+      .animate-marquee {
+        animation: marquee 20s linear infinite;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+    `}</style>
   </section>
 );
 

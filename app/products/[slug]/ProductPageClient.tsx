@@ -21,18 +21,12 @@ function ProductPageClient({ slug }: { slug: string }) {
 
   if (!product) return null;
 
-  return ( 
+  return (
     <main className="w-full space-y-12 ">
       <section className="relative pb-10 pt-24  h-[70vh] lg:h-[60vh] bg-gray-50 flex items-center">
         <div className="container max-w-7xl  lg:grid grid-cols-2 mx-auto flex flex-col lg:flex-row items-center lg:items-stretch h-full px-6 lg:px-0">
           <div className="lg:w-3/4 items-start flex flex-col justify-center h-full space-y-4 z-10">
-             <button
-        onClick={() => router.back()}
-        className=" cursor-pointer z-50 flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-gray-800 shadow hover:bg-white"
-      >
-        <ArrowLeft className="h-4 w-4" />
-        <span className="hidden lg:inline">Back</span>
-      </button>
+           
             <span className="items-center flex rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-[#00019A]">
               {product.category}
             </span>
@@ -63,8 +57,6 @@ function ProductPageClient({ slug }: { slug: string }) {
         </div>
       </section>
 
-   
-
       <section className="mx-auto max-w-6xl px-6 grid gap-10 lg:grid-cols-2 items-center">
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-gray-900">
@@ -90,7 +82,9 @@ function ProductPageClient({ slug }: { slug: string }) {
                 <tbody>
                   {product.machines.map((machine) => (
                     <tr key={machine.name} className="border-t last:border-b-0">
-                      <td className="px-4 py-3 text-gray-700">{machine.name}</td>
+                      <td className="px-4 py-3 text-gray-700">
+                        {machine.name}
+                      </td>
                       <td className="px-4 py-3 text-right font-semibold text-gray-900">
                         {machine.count}
                       </td>

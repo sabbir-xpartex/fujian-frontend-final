@@ -57,7 +57,7 @@ function AboutPageClient() {
   
 
         <section className="mx-auto max-w-5xl text-center space-y-6">
-          <h2 className="text-2xl font-semibold text-gray-900">Company Certifications</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 text-center">Company Certifications</h2>
           <div className="flex flex-wrap justify-center gap-4 text-gray-700">
             <Certification title="OEKO-TEX" />
             <Certification title="Forest Stewardship Council" />
@@ -66,7 +66,7 @@ function AboutPageClient() {
         </section>
 
         <div className="mx-auto max-w-6xl space-y-10">
-          <h2 className="text-2xl font-semibold text-gray-900 text-center">
+          <h2 className="text-2xl font-semibold text-gray-900 text-center text-center">
             Our Journey
           </h2>
 

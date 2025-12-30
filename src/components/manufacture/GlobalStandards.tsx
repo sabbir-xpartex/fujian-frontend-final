@@ -6,7 +6,7 @@ import { Globe, Award, ClipboardCheck } from "lucide-react";
 function GlobalStandards() {
   return (
     <section className="rounded-3xl border bg-blue-50 p-8">
-      <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+      <h2 className="text-2xl font-semibold text-gray-900 text-center mb-4">
         Global Manufacturing Standards
       </h2>
 

@@ -7,6 +7,7 @@ import { Factory, Award, Users } from "lucide-react";
 function AboutSection() {
   return (
     <section className="relative ">
+      
       <div className="absolute inset-0 -z-10 bg-linear-to-b from-white via-blue-50/40 to-white" />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
