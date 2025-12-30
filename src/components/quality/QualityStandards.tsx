@@ -7,13 +7,13 @@ function QualityStandards() {
   return (
     <section className="rounded-3xl bg-blue-50 p-8">
       <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-        Compliance & Standards
+        Company Certifications
       </h2>
 
       <div className="grid gap-6 sm:grid-cols-3">
-        <Item icon={<Award />} text="ISO-aligned QC system" />
-        <Item icon={<ClipboardCheck />} text="Brand audit ready" />
-        <Item icon={<ShieldCheck />} text="Export compliance" />
+        <Item icon={<Award />} text="OEKO-TEX" />
+        <Item icon={<ClipboardCheck />} text="Forest Stewardship Council" />
+        <Item icon={<ShieldCheck />} text="Global Recycled Standard" />
       </div>
     </section>
   );

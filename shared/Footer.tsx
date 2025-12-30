@@ -6,11 +6,16 @@ import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 function Footer() {
+  const titleClass =
+    "text-sm font-semibold bg-linear-to-r from-[#00019A] to-blue-600 bg-clip-text text-transparent";
+
+  const textClass = "text-sm text-neutral-800 hover:text-[#00019A]";
+
   return (
     <footer className="relative mt-8 border border-[#00019A]/10 overflow-hidden bg-white">
       <div className="absolute inset-0 -z-10 bg-linear-to-b from-[#00019A]/5 via-white to-white" />
 
-      <div className="mx-auto max-w-7xl px-4 py-4 lg:pt-10 md:px-6">
+      <div className="mx-auto max-w-7xl px-4 py-2 lg:pt-10 md:px-6">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           <div className="flex flex-col gap-4">
             <Image
@@ -20,7 +25,7 @@ function Footer() {
               height={48}
               className="w-40"
             />
-            <p className="text-sm leading-relaxed text-[#00019A]/80">
+            <p className="text-sm leading-relaxed text-neutral-800">
               Professional garment accessories manufacturer providing
               high-quality buttons, zippers, labels, and custom accessories for
               global fashion brands.
@@ -28,82 +33,42 @@ function Footer() {
           </div>
 
           <div className="flex flex-col justify-center items-center lg:items-start gap-3">
-            <h3 className="text-sm font-semibold text-[#00019A]">Company</h3>
-            <Link
-              href="/about"
-              className="text-sm text-[#00019A]/70 hover:text-[#00019A]"
-            >
-              About Us
-            </Link>
-            <Link
-              href="/manufacturing"
-              className="text-sm text-[#00019A]/70 hover:text-[#00019A]"
-            >
-              Manufacturing
-            </Link>
-            <Link
-              href="/quality"
-              className="text-sm text-[#00019A]/70 hover:text-[#00019A]"
-            >
-              Quality Control
-            </Link>
-            <Link
-              href="/contact"
-              className="text-sm text-[#00019A]/70 hover:text-[#00019A]"
-            >
-              Contact
-            </Link>
+            <h3 className={titleClass}>Company</h3>
+            <Link href="/about" className={textClass}>About Us</Link>
+            <Link href="/manufacturing" className={textClass}>Manufacturing</Link>
+            <Link href="/quality" className={textClass}>Quality Control</Link>
+            <Link href="/contact" className={textClass}>Contact</Link>
           </div>
 
           <div className="flex flex-col gap-3 items-center lg:items-start">
-            <h3 className="text-sm font-semibold text-[#00019A]">Products</h3>
-            <Link
-              href="/products/buttons"
-              className="text-sm text-[#00019A]/70 hover:text-[#00019A]"
-            >
-              Buttons
-            </Link>
-            <Link
-              href="/products/zippers"
-              className="text-sm text-[#00019A]/70 hover:text-[#00019A]"
-            >
-              Zippers
-            </Link>
-            <Link
-              href="/products/labels"
-              className="text-sm text-[#00019A]/70 hover:text-[#00019A]"
-            >
-              Labels & Tags
-            </Link>
-            <Link
-              href="/products/custom"
-              className="text-sm text-[#00019A]/70 hover:text-[#00019A]"
-            >
-              Custom Accessories
-            </Link>
+            <h3 className={titleClass}>Products</h3>
+            <Link href="/products/buttons" className={textClass}>Buttons</Link>
+            <Link href="/products/zippers" className={textClass}>Zippers</Link>
+            <Link href="/products/labels" className={textClass}>Labels & Tags</Link>
+            <Link href="/products/custom" className={textClass}>Custom Accessories</Link>
           </div>
 
           <div className="flex flex-col gap-4 items-center lg:items-start">
-            <h3 className="text-sm font-semibold text-[#00019A]">Contact</h3>
+            <h3 className={titleClass}>Contact</h3>
 
-            <div className="flex items-start gap-3 text-sm text-[#00019A]/80">
+            <div className="flex items-start gap-3 text-sm text-neutral-800">
               <MapPin className="h-4 w-4 text-[#00019A]" />
               <span>Fujian, Bangladesh</span>
             </div>
 
-            <div className="flex items-start gap-3 text-sm text-[#00019A]/80">
+            <div className="flex items-start gap-3 text-sm text-neutral-800">
               <Mail className="h-4 w-4 text-[#00019A]" />
               <span>info@faclbangladesh.com</span>
             </div>
 
-            <div className="flex items-start gap-3 text-sm text-[#00019A]/80">
+            <div className="flex items-start gap-3 text-sm text-neutral-800">
               <Phone className="h-4 w-4 text-[#00019A]" />
               <span>+880 1714 813840</span>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 border-t border-[#00019A]/15 pt-4 text-center text-xs text-[#00019A]/70">
+        <div className="mt-8 border-t border-[#00019A]/15 pt-2 text-center text-xs text-neutral-800">
           © {new Date().getFullYear()} Fujian Accessories Co. Ltd. All rights
           reserved.
         </div>

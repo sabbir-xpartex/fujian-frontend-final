@@ -73,7 +73,7 @@ function HeroSection() {
         <div className="order-1 relative w-full flex items-center justify-center md:order-2">
           <div className="relative w-full ">
             <Image
-              src="/cover/cover.avif"
+              src="/cover/1732012212854.jpeg"
               alt="Garment accessories manufacturing factory"
               width={700}
               height={700}

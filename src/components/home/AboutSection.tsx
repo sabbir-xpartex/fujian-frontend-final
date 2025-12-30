@@ -12,7 +12,7 @@ function AboutSection() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
         <div className="relative flex items-center justify-center">
           <Image
-            src="/cover/about.jpg"
+            src="/cover/1701513690612.png"
             alt="Fujian Accessories manufacturing facility"
             width={700}
             height={700}

@@ -52,7 +52,7 @@ function MarketsSection() {
           </div>
           <div className="relative overflow-hidden lg:rounded-3xl">
             <Image
-              src="/products/market.webp"
+              src="/cover/Acctrims-banner (1).jpg"
               alt="Global export markets map"
               width={900}
               height={600}

@@ -5,9 +5,9 @@
     "category": "Trims",
     "code": "08",
     "images": {
-      "cover": "/products/wovenLabel.webp",
-      "primary": "/products/wovenLabel.webp",
-      "secondary": "/products/wovenLabel.webp"
+      "cover": "/products/Woven Labels/img26.jpg",
+      "primary": "/products/Woven Labels/img27.jpeg",
+      "secondary": "/products/Woven Labels/img28.png"
     },
     "capacity": {
       "daily": "400,000 pcs/day"
@@ -28,9 +28,9 @@
     "category": "Trims",
     "code": "07",
     "images": {
-      "cover": "/products/printedLabel.webp",
-      "primary": "/products/printedLabel.webp",
-      "secondary": "/products/printedLabel.webp"
+      "cover": "/products/Printed Label/img17.jpg",
+      "primary": "/products/Printed Label/img18.jpg",
+      "secondary": "/products/Printed Label/img19.jpg"
     },
     "capacity": {
       "daily": "2,000,000 pcs/day"
@@ -51,9 +51,9 @@
     "category": "Packaging",
     "code": "15",
     "images": {
-      "cover": "/products/offsetPrinting.jpg",
-      "primary": "/products/offsetPrinting.jpg",
-      "secondary": "/products/offsetPrinting.jpg"
+      "cover": "/products/Offset Printing & Back Board/img14.jpeg",
+      "primary": "/products/Offset Printing & Back Board/img15.png",
+      "secondary": "/products/Offset Printing & Back Board/img16.png"
     },
     "capacity": {
       "daily": "500,000 pcs/day"
@@ -73,9 +73,9 @@
     "category": "Trims",
     "code": "11",
     "images": {
-      "cover": "/products/heatTransfer.png",
-      "primary": "/products/heatTransfer.png",
-      "secondary": "/products/heatTransfer.png"
+      "cover": "/products/Heat Transfer Print/img8.jpg",
+      "primary": "/products/Heat Transfer Print/img9.webp",
+      "secondary": "/products/Heat Transfer Print/img10.jpg"
     },
     "capacity": {
       "daily": "300,000 pcs/day"
@@ -92,9 +92,9 @@
     "category": "Trims",
     "code": "09",
     "images": {
-      "cover": "/products/twilltape.webp",
-      "primary": "/products/twilltape.webp",
-      "secondary": "/products/twilltape.webp"
+      "cover": "/products/Twill Tape/img23.png",
+      "primary": "/products/Twill Tape/img24.jpeg",
+      "secondary": "/products/Twill Tape/img25.webp"
     },
     "capacity": {
       "daily": "600,000 meters/day"
@@ -111,9 +111,9 @@
     "category": "Accessories",
     "code": "12",
     "images": {
-      "cover": "/products/custom.avif",
-      "primary": "/products/custom.avif",
-      "secondary": "/products/custom.avif"
+      "cover": "/products/Drawstring & Drawcord/img1.jpeg",
+      "primary": "/products/Drawstring & Drawcord/img2.webp",
+      "secondary": "/products/Drawstring & Drawcord/Drawstring & Drawcord 3.avif"
     },
     "capacity": {
       "daily": "250,000 pcs/day"
@@ -130,9 +130,9 @@
     "category": "Trims",
     "code": "10",
     "images": {
-      "cover": "/products/elastic.jpeg",
-      "primary": "/products/elastic.jpeg",
-      "secondary": "/products/elastic.jpeg"
+      "cover": "/products/Elastic (Normal, Woven & Jacquard)/img3.jpeg",
+      "primary": "/products/Elastic (Normal, Woven & Jacquard)/High-Quality-Custom-Letter-Logo-Jacquard-Elastic-Band-Woven-Webbing-for-Clothing.avif",
+      "secondary": "/products/Elastic (Normal, Woven & Jacquard)/Soft-Sewing-Textile-Underwear-Jacquard-Webbing-Woven-Elastic-Band-for-Clothing.avif"
     },
     "capacity": {
       "daily": "700,000 meters/day"
@@ -149,9 +149,9 @@
     "category": "Patches",
     "code": "13",
     "images": {
-      "cover": "/products/rubber.webp",
-      "primary": "/products/rubber.webp",
-      "secondary": "/products/rubber.webp"
+      "cover": "/products/Rubber & Silicone Patch/img20.jpeg",
+      "primary": "/products/Rubber & Silicone Patch/img21.jpg",
+      "secondary": "/products/Rubber & Silicone Patch/img22.png"
     },
     "capacity": {
       "daily": "120,000 pcs/day"
@@ -168,9 +168,9 @@
     "category": "Patches",
     "code": "14",
     "images": {
-      "cover": "/products/leather.webp",
-      "primary": "/products/leather.webp",
-      "secondary": "/products/leather.webp"
+      "cover": "/products/Leather Patch/img11.webp",
+      "primary": "/products/Leather Patch/img12.webp",
+      "secondary": "/products/Leather Patch/img13.webp"
     },
     "capacity": {
       "daily": "80,000 pcs/day"
@@ -187,9 +187,9 @@
     "category": "Packaging",
     "code": "16",
     "images": {
-      "cover": "/products/gumTape.png",
-      "primary": "/products/gumTape.png",
-      "secondary": "/products/gumTape.png"
+      "cover": "/products/Gum Tape (Clear & Printed)/img4.jpg",
+      "primary": "/products/Gum Tape (Clear & Printed)/img5.jpg",
+      "secondary": "/products/Gum Tape (Clear & Printed)/img6.jpg"
     },
     "capacity": {
       "daily": "1,000,000 meters/day"

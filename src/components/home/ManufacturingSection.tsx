@@ -30,7 +30,7 @@ function ManufacturingSection() {
         <div className="grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-3xl">
             <Image
-              src="/products/menufacture.jpg"
+              src="/cover/Acctrims-banner.jpg"
               alt="Garment accessories production line"
               width={900}
               height={700}
