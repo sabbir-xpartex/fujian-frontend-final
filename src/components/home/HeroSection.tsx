@@ -73,12 +73,12 @@ function HeroSection() {
         <div className="order-1 relative w-full flex items-center justify-center md:order-2">
           <div className="relative w-full ">
             <Image
-              src=""
+              src="./cover.jpg"
               alt="Garment accessories manufacturing factory"
               width={700}
               height={700}
               priority
-              className="rounded-3xl object-cover h-70 lg:h-120 w-full shadow-[0_0_30px_rgba(0,0,0,0.12)]"
+              className="rounded-3xl object-cover object-right h-70 lg:h-120 w-full shadow-[0_0_30px_rgba(0,0,0,0.12)]"
             />
           </div>
         </div>

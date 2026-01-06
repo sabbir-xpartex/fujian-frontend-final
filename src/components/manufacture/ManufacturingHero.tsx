@@ -24,7 +24,7 @@ function ManufacturingHero() {
 
       <div className="relative">
         <Image
-          src="/products/market.webp"
+          src="/manufacturing/img (1).jpg"
           alt="Garment accessories manufacturing factory"
           width={700}
           height={500}
