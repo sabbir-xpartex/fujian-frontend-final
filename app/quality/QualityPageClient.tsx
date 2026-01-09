@@ -10,13 +10,12 @@ import QualityInspectionFlow from "@/src/components/quality/QualityInspectionFlo
 
 function QualityClient() {
   return (
-    <main className="mx-auto max-w-7xl px-4 md:px-6 pt-26 space-y-10 lg:pb-20">
+    <main className="mx-auto max-w-7xl px-4 md:px-6 pt-26 space-y-10">
       <QualityHero />
       <QualitySystem />
       <QualityInspectionFlow />
       <QualityStandards />
       <QualityImprovement />
-      <CTASection />
     </main>
   );
 }

@@ -14,19 +14,19 @@ const processes: ProcessItem[] = [
     title: "Raw Material Inspection",
     description:
       "All raw materials are inspected and tested before entering production to ensure durability, color consistency, and compliance with buyer requirements.",
-    image: "/manufacturing/img (1).webp",
+    image: "/manufacturing/img(4).webp",
   },
   {
     title: "Automated Production Line",
     description:
       "Advanced machinery combined with skilled operators ensures precision manufacturing with minimal tolerance deviation.",
-    image: "/manufacturing/img (2).jpg",
+    image: "/manufacturing/img(2).jpg",
   },
   {
     title: "Quality Control & Testing",
     description:
       "Multi-stage quality inspections are performed during and after production to eliminate defects before packing.",
-    image: "/manufacturing/img (2).webp",
+    image: "/manufacturing/img(3).webp",
   },
 ];
 

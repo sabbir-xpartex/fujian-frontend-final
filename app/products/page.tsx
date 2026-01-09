@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function ProductsPage() {
   return (
-    <section className="flex flex-col lg:gap-20">
+    <section className="flex flex-col">
       <ProductsClient />
     </section>
   );

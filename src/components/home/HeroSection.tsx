@@ -1,114 +1,160 @@
 "use client";
 
-import { memo, useCallback } from "react";
-import Image from "next/image";
+import { memo, useState } from "react";
 import Link from "next/link";
-import { Factory, Globe, ShieldCheck } from "lucide-react";
+import { Factory, Globe, ShieldCheck, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-function HeroSection() {
-  const handleQuoteClick = useCallback(() => {}, []);
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+import { motion } from "framer-motion";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
+
+const banners = [
+  {
+    badge: "Trusted Garment Accessories Manufacturer",
+    title: "Fujian Accessories Co. Ltd.",
+    subtitle: "Professional Garment Accessories Supplier",
+    desc: "We manufacture premium buttons, zippers, labels, and custom garment accessories for global fashion brands with strict quality control.",
+    bgImage: "cover/cover.jpg",
+    features: [
+      { icon: Factory, title: "Factory Direct", text: "In-house production" },
+      { icon: ShieldCheck, title: "Strict QC", text: "Export standards" },
+      { icon: Globe, title: "Global Export", text: "Worldwide clients" },
+    ],
+  },
+  {
+    badge: "OEM & ODM Services",
+    title: "Custom Accessories Solutions",
+    subtitle: "From Design to Bulk Production",
+    desc: "OEM & ODM garment accessories with flexible MOQ, fast sampling, and reliable delivery for fashion brands.",
+    bgImage: "cover/germents-accsorice.jpg",
+    features: [
+      { icon: Factory, title: "OEM / ODM", text: "Custom designs" },
+      { icon: Truck, title: "Fast Delivery", text: "On-time shipment" },
+      { icon: Globe, title: "Worldwide", text: "Trusted partner" },
+    ],
+  },
+  {
+    badge: "Quality Assurance",
+    title: "International Quality Control",
+    subtitle: "Consistency You Can Rely On",
+    desc: "Multi-stage inspection ensures durability, color accuracy, and long-term performance.",
+    bgImage:
+      "https://images.ctfassets.net/0c6y4qslwvqw/2syKE8aHUCqoV4bBZeOTiZ/e837df3a53326a5b2b8476c6456f6dda/QIMA_inspector_-_colour_check_inspection.jpg?fm=jpg&q=60&w=1000",
+    features: [
+      { icon: ShieldCheck, title: "Certified QC", text: "Batch inspection" },
+      { icon: Factory, title: "Modern Factory", text: "Advanced machinery" },
+      { icon: Globe, title: "Export Ready", text: "Global compliance" },
+    ],
+  },
+];
+
+function HeroSlider() {
+  const [key, setKey] = useState(0);
 
   return (
-    <section className="relative flex pt-18 lg:pt-25 items-center ">
-      <div className="absolute inset-0 -z-10 bg-linear-to-b from-blue-50 via-white to-white" />
-
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 lg:gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
-        <div className="order-2 flex flex-col justify-center gap-3 lg:gap-6 md:order-1">
-          <span className="w-fit rounded-full border border-blue-200 bg-blue-50 px-4 py-1 text-xs font-medium text-[#00019A]">
-            Trusted Garment Accessories Manufacturer
-          </span>
-
-          <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-            Fujian Accessories CO. Ltd.
-            <span className="block lg:text-3xl text-xl text-[#00019A]">
-              Professional Garment Accessories Manufacturer
-            </span>
-          </h1>
-
-          <p className="max-w-xl text-sm lg:text-base leading-relaxed text-gray-600">
-            We manufacture high-quality buttons, zippers, labels, and custom
-            garment accessories for global fashion brands with strict quality
-            control and factory-direct pricing.
-          </p>
-
-          <div className="flex flex-wrap items-center gap-4">
-            <Button
-              size="lg"
-              onClick={handleQuoteClick}
-              className="bg-[#00019A] px-8 text-white hover:bg-blue-800"
+    <section className="relative">
+      <Swiper
+        modules={[Autoplay, Pagination, EffectFade]}
+        autoplay={{ delay: 5500, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        loop
+        speed={900}
+        effect="fade"
+        onSlideChange={() => setKey((k) => k + 1)}
+      >
+        {banners.map((item, i) => (
+          <SwiperSlide key={i}>
+            <div
+              className="relative h-[80vh] bg-cover bg-center"
+              style={{ backgroundImage: `url(${item.bgImage})` }}
             >
-              Get a Quote
-            </Button>
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-linear-to-r from-black/55 via-black/40 to-black/20" />
 
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-blue-600 px-8 text-[#00019A] hover:bg-blue-50"
-            >
-              <Link href="/products">View Products</Link>
-            </Button>
-          </div>
+              <div className="relative mx-auto flex h-full max-w-7xl items-center px-4 md:px-6">
+                <motion.div
+                  key={key}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="max-w-3xl text-white"
+                >
+                  <span className="inline-block rounded-md bg-white/15 px-4 py-1 text-xs font-semibold tracking-wide">
+                    {item.badge}
+                  </span>
 
-          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            <TrustItem
-              icon={<Factory className="h-5 w-5 text-[#00019A]" />}
-              title="Factory Direct"
-              text="In-house manufacturing"
-            />
-            <TrustItem
-              icon={<ShieldCheck className="h-5 w-5 text-[#00019A]" />}
-              title="Strict QC"
-              text="International standards"
-            />
-            <TrustItem
-              icon={<Globe className="h-5 w-5 text-[#00019A]" />}
-              title="Global Export"
-              text="Worldwide markets"
-            />
-          </div>
-        </div>
+                  <h1 className="mt-5 text-3xl font-bold sm:text-4xl lg:text-5xl">
+                    {item.title}
+                  </h1>
 
-        <div className="order-1 relative w-full flex items-center justify-center md:order-2">
-          <div className="relative w-full ">
-            <Image
-              src="./cover.jpg"
-              alt="Garment accessories manufacturing factory"
-              width={700}
-              height={700}
-              priority
-              className="rounded-3xl object-cover object-right h-70 lg:h-120 w-full shadow-[0_0_30px_rgba(0,0,0,0.12)]"
-            />
-          </div>
-        </div>
-      </div>
+                  <h2 className="mt-2 text-lg font-medium text-gray-200 sm:text-xl">
+                    {item.subtitle}
+                  </h2>
+
+                  <p className="mt-5 text-base leading-relaxed text-gray-300">
+                    {item.desc}
+                  </p>
+
+                  <div className="mt-8 flex gap-4">
+                    <Button className="bg-white px-8 text-[#00019A] hover:bg-gray-100">
+                      Get a Quote
+                    </Button>
+
+                    <Button
+                      variant="outline"
+                      asChild
+                      className="border-white bg-transparent px-8 text-white hover:bg-white hover:text-[#00019A]"
+                    >
+                      <Link href="/products">View Products</Link>
+                    </Button>
+                  </div>
+
+                  {/* Trust Items */}
+                  <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                    {item.features.map((f, idx) => (
+                      <TrustItem
+                        key={idx}
+                        icon={<f.icon className="h-5 w-5 text-[#00019A]" />}
+                        title={f.title}
+                        text={f.text}
+                      />
+                    ))}
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
-}
-
-interface TrustItemProps {
-  icon: React.ReactNode;
-  title: string;
-  text: string;
 }
 
 const TrustItem = memo(function TrustItem({
   icon,
   title,
   text,
-}: TrustItemProps) {
+}: {
+  icon: React.ReactNode;
+  title: string;
+  text: string;
+}) {
   return (
-    <div className="flex items-start gap-3">
-      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-100">
+    <div className="flex items-center gap-3 rounded-md bg-white/10 p-3 backdrop-blur">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
         {icon}
       </div>
       <div>
-        <p className="text-sm font-semibold text-gray-900">{title}</p>
-        <p className="text-xs text-gray-600">{text}</p>
+        <p className="text-sm font-semibold">{title}</p>
+        <p className="text-xs text-gray-300">{text}</p>
       </div>
     </div>
   );
 });
 
-export default memo(HeroSection);
+export default memo(HeroSlider);

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Product } from "@/lib/getProducts";
+import CommonHead from "@/shared/CommonHead";
 
 type CategoryCard = {
   title: string;
@@ -45,6 +46,12 @@ function ProductCategories() {
   return (
     <section className="relative">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <CommonHead
+          badge="Our Products"
+          title="Our Prominent Product"
+          description="Explore our diverse range of product categories at Fujian Accessories Co. Ltd., your trusted manufacturer and supplier of high-quality garment accessories."
+        />
+
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
           {categories.map((item) => (
             <Link
@@ -67,9 +74,7 @@ function ProductCategories() {
                   {item.title}
                 </h3>
 
-                <p className="text-sm text-gray-600">
-                  {item.description}
-                </p>
+                <p className="text-sm text-gray-600">{item.description}</p>
 
                 <div className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-[#00019A]">
                   View Products

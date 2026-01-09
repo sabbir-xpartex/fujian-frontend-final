@@ -7,45 +7,62 @@ import { Button } from "@/components/ui/button";
 
 function CTASection() {
   return (
-    <section className="relative overflow-hidden lg:py-12 py-8">
-      <div className="absolute inset-0  -z-20 bg-linear-to-r from-[#00019A] via-[#00019A]/90 to-[#00019A]" />
-      <div className="absolute inset-0  -z-10 bg-[radial-gradient(80%_60%_at_50%_0%,rgba(255,255,255,0.18),transparent_60%)]" />
+    <section className="relative overflow-hidden py-12 lg:py-20">
+      {/* Modern layered background */}
+      <div className="absolute inset-0 -z-20">
+        {/* Deep gradient base */}
+        <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-[#00019A]/90 to-indigo-950" />
+        
+        {/* Subtle radial glow from top center */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,rgba(0,1,154,0.25)_0%,transparent_70%)]" />
+        
+        {/* Soft noise texture overlay (optional visual depth) */}
+        <div 
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise)' opacity='0.3'/%3E%3C/svg%3E")`,
+          }}
+        />
+      </div>
 
       <div className="mx-auto max-w-7xl px-4 md:px-6">
-        <div className="relative rounded-3xl border border-white/25 bg-white/15 p-10 backdrop-blur-2xl shadow-[0_30px_80px_rgba(0,0,0,0.35)] lg:p-14">
-          <div className="pointer-events-none absolute inset-0 rounded-3xl bg-linear-to-b from-white/25 via-transparent to-transparent" />
+        <div className="relative mx-auto max-w-4xl rounded-3xl border border-white/10 bg-white/5 p-10 lg:p-16 backdrop-blur-2xl shadow-2xl ring-1 ring-white/20">
+          {/* Inner highlight glow */}
+          <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-b from-white/10 via-transparent to-transparent" />
 
-          <div className="relative mx-auto flex max-w-3xl flex-col items-center gap-6 text-center">
-            <h2 className="text-xl lg:text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <div className="relative flex flex-col items-center gap-8 text-center">
+            <h2 className="text-2xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-white">
               Ready to Start Your
-              <span className="block text-white">
+              <span className="block bg-gradient-to-r from-white to-indigo-200 bg-clip-text text-transparent">
                 Next Manufacturing Project?
               </span>
             </h2>
 
-            <p className="max-w-2xl lg:text-base leading-relaxed text-white/90">
+            <p className="max-w-2xl text-base lg:text-lg leading-relaxed text-white/80">
               Contact Fujian Accessories CO. Ltd. today to receive competitive
               pricing, fast lead times, and reliable garment accessory
-              manufacturing solutions.
+              manufacturing solutions tailored to your brand.
             </p>
 
-            <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-5">
+              {/* Primary Button - White with brand accent on hover */}
               <Button
                 size="lg"
                 asChild
-                className="group rounded-xl bg-white px-9 text-[#00019A] shadow-[0_10px_30px_rgba(255,255,255,0.35)] transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_16px_40px_rgba(255,255,255,0.45)]"
+                className="group rounded-full bg-white px-10 py-6 text-[#00019A] font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-gradient-to-r hover:from-white hover:to-indigo-50 hover:shadow-xl hover:shadow-white/20"
               >
-                <Link href="/contact" className="flex items-center gap-2">
+                <Link href="/contact" className="flex items-center gap-3">
                   Get a Quote
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-2" />
                 </Link>
               </Button>
 
+              {/* Secondary Button - Transparent with subtle hover fill */}
               <Button
                 size="lg"
                 variant="outline"
                 asChild
-                className="rounded-xl border-white/70 px-9  backdrop-blur-md transition-all hover:-translate-y-0.5 hover:bg-white/15"
+                className="rounded-full border border-white/30 bg-transparent px-10 py-6 text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/60 hover:bg-white/10"
               >
                 <Link href="/products">View Products</Link>
               </Button>

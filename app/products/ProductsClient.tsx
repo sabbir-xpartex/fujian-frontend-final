@@ -5,15 +5,17 @@ import { memo } from "react";
 
 function ProductsClient() {
   return (
-    <main className="mx-auto max-w-7xl w-full px-4 lg:px-0 pt-20 lg:pt-26 pb-16 space-y-8">
-      <section className="max-w-2xl mx-auto text-center  space-y-2">
-        <h1 className="text-2xl lg:text-3xl font-semibold lg:font-bold bg-linear-to-r from-[#00019A] to-blue-600 bg-clip-text text-transparent">
-          Our Products
-        </h1>
+    <main className="mx-auto max-w-7xl w-full px-4 md:px-6 lg:px-0 pt-5 lg:pt-8 space-y-8">
+      <section className="px-4">
+        <div className="mx-auto max-w-4xl text-center space-y-2">
+          <span className="inline-block rounded-full border border-blue-200 bg-blue-50 px-6 py-2 text-sm font-medium text-[#00019A]">
+            Product Fujian Accessories Co. Ltd.
+          </span>
 
-        <p className="text-sm text-gray-600">
-Fujian Accessories Co. Ltd. is a trusted manufacturer and supplier of high-quality garments accessories for global apparel brands. We provide a complete range of labeling, trimming and packaging solutions that enhance brand identity, functionality and garment value. Our products are manufactured using premium raw materials and modern technology to meet international quality standards.
-        </p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            Our Products
+          </h1>
+        </div>
       </section>
 
       <ProductsGrid />

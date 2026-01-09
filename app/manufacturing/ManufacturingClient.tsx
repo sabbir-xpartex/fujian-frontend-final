@@ -10,13 +10,12 @@ import ManufacturingProcessShowcase from "@/src/components/manufacture/Manufactu
 
 function ManufacturingClient() {
   return (
-    <main className="mx-auto max-w-7xl px-4 md:px-6 pt-26 space-y-20 lg:pb-20">
+    <main className="mx-auto max-w-7xl pt-10 space-y-20">
       <ManufacturingHero />
       <ManufacturingProcessSteps />
       <QualityAndCompliance />
-      <ManufacturingProcessShowcase/>
+      <ManufacturingProcessShowcase />
       <GlobalStandards />
-      <CTASection />
     </main>
   );
 }

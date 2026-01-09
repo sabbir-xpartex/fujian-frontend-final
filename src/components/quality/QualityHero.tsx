@@ -22,7 +22,7 @@ function QualityHero() {
       </div>
 
       <Image
-        src="/products/market.webp"
+        src="/products/"
         alt="Quality inspection process"
         width={700}
         height={450}

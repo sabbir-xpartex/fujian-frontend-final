@@ -17,7 +17,7 @@ function ProductsGrid() {
   }, []);
 
   return (
-    <section className="grid gap-2 lg:gap-6 w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+    <section className="grid gap-2 lg:gap-4 w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 md:px-4">
       {products.map((product) => {
         console.log(product);
 

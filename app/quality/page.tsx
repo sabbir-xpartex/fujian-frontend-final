@@ -56,7 +56,21 @@ export const metadata: Metadata = {
 export default function QualityPage() {
   return (
     <section className="flex flex-col lg:gap-10">
-      <QualityPageClient />
+      <div>
+        {/*  HERO  */}
+        <section className="pt-10 px-4 md:px-6">
+          <div className="mx-auto max-w-4xl text-center space-y-2">
+            <span className="inline-block rounded-full border border-blue-200 bg-blue-50 px-6 py-2 text-sm font-medium text-[#00019A]">
+              Quality Fujian Accessories Co. Ltd.
+            </span>
+
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+              Quality Control & Compliance
+            </h1>
+          </div>
+        </section>
+        <QualityPageClient />
+      </div>
     </section>
   );
 }

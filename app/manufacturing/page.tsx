@@ -36,8 +36,22 @@ export const metadata: Metadata = {
 
 export default function ManufacturingPage() {
   return (
-    <section className="flex flex-col lg:gap-20">
-      <ManufacturingClient />
+    <section className="flex flex-col lg:gap-20 px-4 md:px-6">
+      <div>
+        {/*  HERO  */}
+        <section className="pt-10 px-4">
+          <div className="mx-auto max-w-4xl text-center space-y-2">
+            <span className="inline-block rounded-full border border-blue-200 bg-blue-50 px-6 py-2 text-sm font-medium text-[#00019A]">
+              Manufacturing Fujian Accessories Co. Ltd.
+            </span>
+
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+              Manufacturing Capabilities
+            </h1>
+          </div>
+        </section>
+        <ManufacturingClient />
+      </div>
     </section>
   );
 }
