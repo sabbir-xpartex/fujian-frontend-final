@@ -15,11 +15,11 @@ const navItems = [
   {
     name: "Products",
     href: "/products",
-    // subItems: [
-    //   { name: "Garment Accessories", href: "/products/garment" },
-    //   { name: "Packaging Solutions", href: "/products/packaging" },
-    //   { name: "Custom Manufacturing", href: "/products/custom" },
-    // ],
+    subItems: [
+      // { name: "Garment Accessories", href: "/products/garment" },
+      // { name: "Packaging Solutions", href: "/products/packaging" },
+      // { name: "Custom Manufacturing", href: "/products/custom" },
+    ],
   },
   { name: "Manufacturing", href: "/manufacturing" },
   // { name: "Quality", href: "/quality" },
@@ -76,7 +76,7 @@ function Navbar() {
             <nav className="hidden md:flex items-center gap-8">
               {navItems.map((item) => (
                 <div key={item.name} className="relative group">
-                  {/* <Link
+                  <Link
                     href={item.href}
                     className={`flex items-center gap-1 text-sm font-semibold transition ${
                       isActive(item.href)
@@ -85,10 +85,10 @@ function Navbar() {
                     }`}
                   >
                     {item.name}
-                    {item?.subItems && (
+                    {/* {item?.subItems && (
                       <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
-                    )}
-                  </Link> */}
+                    )} */}
+                  </Link>
 
                   {/* Dropdown */}
                   {/* {item.subItems && (
@@ -149,7 +149,7 @@ function Navbar() {
                     <nav className="flex-1 overflow-y-auto px-6 py-8">
                       {navItems.map((item) => (
                         <div key={item.name} className="mb-5">
-                          {/* <Link
+                          <Link
                             href={item.href}
                             onClick={() => setMobileOpen(false)}
                             className={`block py-2 text-lg font-medium ${
@@ -159,7 +159,7 @@ function Navbar() {
                             }`}
                           >
                             {item.name}
-                          </Link> */}
+                          </Link>
 
                           {/* {item.subItems && (
                             <div className="ml-4 mt-2 space-y-2">
